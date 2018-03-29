@@ -1,0 +1,361 @@
+.inner {
+	margin: 0 auto;
+	width: 1160px;
+	position: relative;
+	/*overflow: hidden;*/
+}
+a {
+	text-decoration: none;
+}
+header {
+	height: 170px;
+	width: 100%;
+	background: url(../images/banner.png)  center -10px no-repeat;
+}
+.navtop {
+	height: 42px;
+	background-color: rgba(255,255,255,.5);
+	box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+}
+.navleft {
+	float: left;
+	height: 42px;
+	line-height: 42px; 
+}
+.navleft li {
+	float: left;
+	height: 42px;
+	padding-left: 11px;
+	padding-right: 11px;
+	position: relative;
+}
+.navleft li:last-child div {
+	display: none;
+	width: 259px;
+	height: 174px;
+	background: url(../images/erweima.png) center center no-repeat;
+	position: absolute;
+	left: -20px;
+	z-index: 2;
+}
+.navleft li:first-child {
+	padding-left: 24px;
+	background: url(../images/icons.png) -915px -75px no-repeat;
+}
+.navleft li:last-child {
+	margin-left: 13px;
+	padding-left: 18px;
+	background: url(../images/icons.png) -1366px -1164px no-repeat;
+}
+.navleft li a {
+	color: #000;
+	font-size: 12px;
+}
+.navleft li:hover {
+	background-color: rgba(255,255,255,.3);
+	cursor: pointer;
+}
+.navleft li:hover:last-child div {
+	display: block;
+}
+/*navleft完成*/
+.navright li {
+	float: right;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	position: relative;
+}
+.navright li:first-child a {
+	display: block;
+	width: 58px;
+	height: 48px;
+	background: url(../images/date.png);
+	font-size: 14px;
+	color: #fff;
+}
+.navright li:nth-child(2) a {
+	font-size: 12px;
+	color: black;
+	padding-left: 11px;
+	padding-right: 11px;
+}
+.navright li:nth-child(3) a.akari {
+	display: block;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: #fff url(../images/akari.jpg) center center no-repeat;
+	background-size: 100% 100%;
+	margin-top: 4px;
+	margin-right: 12px;
+}
+.navright li:nth-child(2):hover {
+	background-color: rgba(255,255,255,.3);
+	cursor: pointer;	
+}
+.navright li:nth-child(3):hover .hb {
+	display: block;
+}
+/*登录小方块部分*/
+.hb {
+	display: none;
+	width: 346px;
+	height: 334px;
+	position: absolute;
+	left: -152px;
+	background: #fff;
+	border: 1px solid #eee;
+	z-index: 999;
+}
+.hb p:first-child {
+	font-size: 11px;
+	line-height: 39px;
+	text-align: left;
+	text-indent: 1em;
+}
+.hb div {
+	width: 320px;
+	height: 200px;
+	background: url(../images/gundongbc.png);
+	margin-left: 12px;
+	overflow: hidden;
+	position: relative;
+}
+.hb div::before {
+	content: url(../images/gundong.png);
+	display: block;
+	width: 320px;
+	height: 200px;
+	position: absolute;
+	right: -301px;
+	-webkit-animation: gundong1 5s linear 0s infinite;
+}
+.hb div::after {
+	content: url(../images/gundong.png);
+	display: block;
+	width: 320px;
+	height: 200px;
+	position: absolute;
+	-webkit-animation: gundong2 5s linear 0s infinite;
+}
+@-webkit-keyframes gundong1 {
+	0% {
+		right: -301px; 
+	}
+	100% {
+		right: 0px;
+	}
+
+}
+@-webkit-keyframes gundong2 {
+	0% {
+		left: 0px; 
+	}
+	100% {
+		left: -298px;
+	}
+
+}
+.hb a.submit {
+	display: block;
+	width: 320px;
+	height: 43px;
+	border-radius: 3px;
+	background-color: #00A1D6;
+	color: #fff;
+	margin-top: 12px;
+	margin-left: 12px;
+}
+/*登录弹幕效果小方框结束*/
+/*LOGO部分*/
+.logo {
+	width: 220px;
+	height: 105px;
+	position: absolute;
+	left: 26px;
+	top: 55px;
+	background: url(../images/logo.png);
+	text-indent: -999em;
+}
+.logo:hover {
+	cursor: pointer;
+}
+.search {
+	width: 338px;
+	height: 32px;
+	background-color: rgba(255,255,255,.3);
+	position: absolute;
+	right: 0px;
+	top: 115px;
+	border-radius: 5px;
+	padding: 2px;
+}
+.search a.sl {
+	display: inline-block;
+	width: 43px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 11px;
+	color: #F25D8E;
+	background: url(../images/icons.png) -660px -655px;
+	background-color: rgba(255,255,255,.8);
+	padding-left: 25px;
+	border-radius: 5px;
+}
+.search a.sl:hover {
+	background-color: rgb(255,255,255);
+}
+
+.search a.sr {
+	display: inline-block;
+	width: 20px;
+	height: 32px;
+	background: url(../images/icons.png) -662px -728px;
+	position: absolute;
+	right: 19px;
+	top: 10px;
+}
+.search input {
+	display: inline-block;
+	width: 266px;
+	height: 32px;
+	line-height: 32px;
+	background-color: rgba(255,255,255,.8);
+	border: 0px;
+	border-radius: 5px;
+	font-size: 11px;
+	color: #F25D8E;
+	text-indent: 1em;
+}
+.search input:hover {
+	background-color: rgb(255,255,255);
+}
+
+.search a.sr:hover+input  {
+	background-color: rgb(255,255,255);
+}
+/*共有部分导航栏开始*/
+nav.inner {
+	height: 40px;
+	margin-top: 7px;
+}
+.lf {
+	width: 851px;
+	height: 40px;
+	float: left;
+}
+.lf>li {
+	float: left;
+	width: 37px;
+	height: 12px;
+	margin-right: 22px;
+	padding-top: 28px;
+	text-align: center;
+	background: url(../images/sz.png) -2px 11px no-repeat;
+	position: relative;
+}
+.lf li:hover {
+	cursor: pointer;
+}
+.lf>li:first-child {
+	width: 25px;
+	background: url(../images/icons.png) -660px -1166px no-repeat;
+}
+.lf>li:last-child {
+	margin-right: 0px;
+}
+.lf>li a {
+	font-size: 10px;
+	color: #222222;
+}
+.lr {
+	float: right;
+	width: 309px;
+	height: 40px;
+}
+.lr li {
+	float: left;
+	width: 36px;
+	height: 13px;
+	margin-right: 16px;
+	padding-top: 27px;
+	background: url(../images/icons.png) -84px -1808px;
+}
+.lr li:hover,
+.lr li:hover a {
+	cursor: pointer;
+	color: #00A1D6;
+}
+.lr li:nth-child(2) {
+	background: url(../images/icons.png) -84px -2000px;
+}
+.lr li:nth-child(3) {
+	background: url(../images/icons.png) -84px -1872px;
+}
+.lr li:nth-child(4) {
+	background: url(../images/icons.png) -78px -1935px;
+}
+.lr li a {
+	font-size: 12px;
+	color: #222222;
+}
+.lr li:first-child {
+	margin-left: 26px;
+}
+.lr li:last-child {
+	margin-right: 0px;
+	padding-top: 0px;
+}
+.lr li img {
+	width: 77px;
+	height: 40px;
+}
+/*静态导航栏完成*/
+/*hover下拉菜单制作*/
+.lf li ul {
+	display: none;
+	width: 130px;
+	height: 120px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	position: absolute;
+	z-index: 10;
+	background-color: #fff;
+}
+.lf li ul li {
+	height: 30px;
+	line-height: 30px;
+	font-size: 10px;
+	text-align: left;
+	padding-left: 22px;
+	background: url(../images/icons2.png) 8px -1614px no-repeat;
+	transition: all 0.3s ease 0s;
+}
+.lf li ul li a {
+	display: block;
+	width: 105px;
+	background: url(../images/icons2.png) 108px -1577px no-repeat;
+	/*90px -1577px*/
+}
+.lf li ul li:hover {
+	text-indent: 1em;
+	background: #E5E9EF url(../images/icons2.png) 22px -1614px no-repeat;
+}
+.lf li ul li:first-child:hover a {
+	background: url(../images/icons2.png) 75px -1577px no-repeat;
+}
+.lf li ul li:nth-child(2):hover a {
+	background: url(../images/icons2.png) 65px -1577px no-repeat;
+}
+.lf li ul li:nth-child(3):hover a {
+	background: url(../images/icons2.png) 96px -1577px no-repeat;
+}
+.lf li ul li:nth-child(4):hover a {
+	background: url(../images/icons2.png) 42px -1577px no-repeat;
+}
+.lf>li:not(:first-child):hover ul {
+	display: block;
+}
+
+/*公共部分完成*/
