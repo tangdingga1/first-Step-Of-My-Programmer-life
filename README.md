@@ -2,9 +2,9 @@
 ## 人生第一个完整的前端项目页面  
 ## 所用：html和CSS  
 ``比较有意思的是当时用纯CSS实现了一个登陆下拉的弹幕效果，滚动轮播图和萌萌的点击下载APP``  
-[点击预览项目](http://htmlpreview.github.io/?https://tangdingga1.github.io/first-Step-Of-My-Programmer-life/bilibili.html)  
-##分割线下面是三个月前初始GIT的我第一次摸索着登陆GIT，摸索着上传项目，摸索着写下的惨不忍睹的README，黑历史。  
-# 哔哩哔哩 (゜-゜)つロ 干杯_-bilibili
+[点击预览项目](http://htmlpreview.github.io/?https://tangdingga1.github.io/first-Step-Of-My-Programmer-life/bilibili.html)
+## 分割线下面是三个月前初始GIT的我第一次摸索着登陆GIT，摸索着上传项目，摸索着写下的惨不忍睹的README，黑历史。  
+## 哔哩哔哩 (゜-゜)つロ 干杯_-bilibili
 ---
 start to learn how to become a front-end Web developer a week and made a simple Website. 
 My English is too bad!But I can do my best to learn it well.
